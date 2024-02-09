@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 
-O projeto Chamada de Voo é uma aplicação que fornece informações sobre voos, permitindo adicionar e visualizar detalhes de voos, como embarque, chegada imediata, e última chamada, ultilizada por anunciantea de voos em aeroportos
+O projeto Chamada de Voo é uma aplicação que fornece informações sobre voos, permitindo adicionar e visualizar detalhes de voos, como embarque, chegada imediata, e última chamada, ultilizada por anunciantes de voos em aeroportos
 
 ## Tecnologias Utilizadas
 
