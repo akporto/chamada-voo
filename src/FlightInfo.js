@@ -69,7 +69,9 @@ const FlightInfo = ({ flight, index, visibleSection, toggleSection, onRemove }) 
   }
 }}>Remover</button>
       </div>
+   <hr/>
     </div>
+    
   );
 };
 
