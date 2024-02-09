@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 
-O projeto Flight Info Page é uma aplicação que fornece informações sobre voos, permitindo adicionar e visualizar detalhes de voos, como embarque, chegada imediata, e última chamada.
+O projeto Flight Chamada de Voo é uma aplicação que fornece informações sobre voos, permitindo adicionar e visualizar detalhes de voos, como embarque, chegada imediata, e última chamada, ultilizada por anunciantea de voos em aeroportos
 
 ## Tecnologias Utilizadas
 
