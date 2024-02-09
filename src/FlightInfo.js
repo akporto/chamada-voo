@@ -12,7 +12,7 @@ const FlightInfo = ({ flight, index, visibleSection, toggleSection, onRemove }) 
 
   return (
     <div className="flight-info">
-      <h2>Informações do Voo {index + 1}</h2>
+      <h3>{flight.companyName} {flight.flightNumber} Embarque {flight.gateNumber}</h3>
       <div className="flight-details">
         {isVisible('embarque') && (
           <div className='embarque'>
