@@ -1,23 +1,55 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from "./Header";
+import FlightForm from './FlightForm';
+import FlightInfo from "./FlightInfo";
+import Footer from './Footer';
 import './App.css';
 
+const SECTIONS = {
+  EMBARQUE: 'embarque',
+  CHEGADA: 'chegada',
+  IMEDIATO: 'imediato',
+  ULTIMA_CHAMADA: 'ultimaChamada',
+};
+
 function App() {
+  const [flights, setFlights] = React.useState([]);
+  const [visibleSection, setVisibleSection] = React.useState(SECTIONS.EMBARQUE);
+
+  const handleAddFlight = (newFlight) => {
+    setFlights([...flights, newFlight]);
+    setVisibleSection(SECTIONS.EMBARQUE);
+  };
+
+  const handleRemoveFlight = (index) => {
+    const updatedFlights = [...flights];
+    updatedFlights.splice(index, 1);
+    setFlights(updatedFlights);
+  };
+
+  const toggleSection = (section) => {
+    setVisibleSection(section);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Header />
+      <FlightForm onAddFlight={handleAddFlight} />
+      <div className="content-container">
+        <div className="container">
+          {flights.map((flight, index) => (
+            <FlightInfo
+              key={index}
+              flight={flight}
+              index={index}
+              visibleSection={visibleSection}
+              toggleSection={toggleSection}
+              onRemove={handleRemoveFlight}
+            />
+          ))}
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
