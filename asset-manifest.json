@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/chamada-voo/static/css/main.e23075eb.css",
-    "main.js": "/chamada-voo/static/js/main.94c3065c.js",
+    "main.js": "/chamada-voo/static/js/main.c4343299.js",
     "static/js/592.0de1d260.chunk.js": "/chamada-voo/static/js/592.0de1d260.chunk.js",
     "static/media/airplane.png": "/chamada-voo/static/media/airplane.4fcd6d1b80f2e70c2ad6.png",
     "index.html": "/chamada-voo/index.html",
     "main.e23075eb.css.map": "/chamada-voo/static/css/main.e23075eb.css.map",
-    "main.94c3065c.js.map": "/chamada-voo/static/js/main.94c3065c.js.map",
+    "main.c4343299.js.map": "/chamada-voo/static/js/main.c4343299.js.map",
     "592.0de1d260.chunk.js.map": "/chamada-voo/static/js/592.0de1d260.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e23075eb.css",
-    "static/js/main.94c3065c.js"
+    "static/js/main.c4343299.js"
   ]
 }
